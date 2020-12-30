@@ -12,8 +12,8 @@ class Scraper
     student_cards = []
     
   
-  doc.css("div.roster-cards-container").each do |project|
-  project.css(".student-card a").each do |student|
+    doc.css("div.roster-cards-container").each do |project|
+    project.css(".student-card a").each do |student|
     
     student_link = "#{student.attr('href')}"
     student_name = student.css('.student-name').text
